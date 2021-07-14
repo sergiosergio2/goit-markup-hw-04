@@ -235,7 +235,7 @@ img {
 /*=========================ПОЧЕМУ МЫ===================*/
 
 .advantages {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
 }
 .advantages-icon {
@@ -296,7 +296,7 @@ img {
 /*================= ACTIVITIES ==================*/
 
 .skills {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
   padding-bottom: 94px;
 }
@@ -325,7 +325,7 @@ img {
 /*=================TEAM SECTION==============*/
 
 .team {
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
 
   background-color: #f5f4fa;
@@ -546,18 +546,16 @@ footer {
 .work-menu-btn-text:focus {
   color: #ffffff;
   background: var(--accent-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .work-menu-btn-text:hover {
   color: #ffffff;
   background: var(--accent-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* =========Карточки клиентов========= */
-
-.client-block {
-  /* padding-bottom: 94px; */
-}
 
 .client {
   display: flex;
@@ -569,6 +567,10 @@ footer {
 .client-cell {
   margin-left: 30px;
   margin-top: 30px;
+}
+.client-cell:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .client-info {
   padding: 20px 24px;
