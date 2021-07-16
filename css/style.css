@@ -51,7 +51,6 @@ img {
 }
 
 .head {
-  width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid #ececec;
   padding-top: 32px;
@@ -128,7 +127,7 @@ img {
   align-items: center;
   margin-left: auto;
 }
-
+.tel-link,
 .mailto-link {
   font-weight: 500;
   font-size: 14px;
@@ -138,6 +137,7 @@ img {
 }
 .contakt-item-icon {
   margin-right: 10px;
+  fill: var(--text-color);
 }
 
 .tel-link:hover,
@@ -146,22 +146,17 @@ img {
 .mailto-link:focus {
   color: var(--accent-color);
 }
-.tel-link:hover,
-.tel-link:focus,
-.mailto-link:focus,
-.mailto-link:hover {
+.tel-link:hover .contakt-item-icon,
+.tel-link:focus .contakt-item-icon {
   fill: var(--accent-color);
 }
-
-.tel-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+.mailto-link:hover,
+.mailto-link:focus {
+  color: var(--accent-color);
+}
+.mailto-link:hover .contakt-item-icon,
+.mailto-link:focus .contakt-item-icon {
+  fill: var(--accent-color);
 }
 
 .contakt .contakt-item + .contakt-item {
@@ -188,7 +183,8 @@ img {
     ),
     url("../images/fon-images/foto-fon1.jpg");
 
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #c4c4c4;
 }
 
@@ -235,7 +231,6 @@ img {
 /*=========================ПОЧЕМУ МЫ===================*/
 
 .advantages {
-  width: 1600px;
   margin: 0 auto;
 }
 .advantages-icon {
@@ -296,7 +291,6 @@ img {
 /*================= ACTIVITIES ==================*/
 
 .skills {
-  width: 1600px;
   margin: 0 auto;
   padding-bottom: 94px;
 }
@@ -325,7 +319,6 @@ img {
 /*=================TEAM SECTION==============*/
 
 .team {
-  width: 1600px;
   margin: 0 auto;
 
   background-color: #f5f4fa;
@@ -416,7 +409,6 @@ img {
   fill: white;
 }
 .regular-customers {
-  width: 1600px;
   margin: 0 auto;
 }
 .regular-customers-title {
@@ -458,11 +450,17 @@ img {
   fill: #afb1b8;
 }
 footer {
-  width: 1600px;
   margin: 0 auto;
   padding: 60px 0px;
 
   background-color: #2f303a;
+}
+.footer-block {
+  display: flex;
+}
+.footer-text-link-block {
+  margin-left: 70px;
+  padding-top: 12px;
 }
 
 .logo-footer {
@@ -503,12 +501,53 @@ footer {
 .address-mail {
   margin-bottom: 9px;
 }
+.footer-text {
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: #ffffff;
+}
+.footer-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
 
 /* ===============ПОРТФОЛИО========== */
 
 .work-section {
-  width: 1600px;
-  margin: auto;
+  /* width: 1600px; */
+  margin: 0 auto;
 }
 
 .work-menu {
@@ -538,10 +577,7 @@ footer {
   letter-spacing: 3%;
   color: #212121;
 }
-.activ {
-  color: #ffffff;
-  background: var(--accent-color);
-}
+
 
 .work-menu-btn-text:focus {
   color: #ffffff;
